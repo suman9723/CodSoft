@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Your journey to success starts here</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <section class="info fade-in">
+                <h2>What We Do</h2>
+                <p>We provide high-quality services to help you achieve your goals. Whether it's business consulting or personal coaching, we are here to support you.</p>
+            </section>
+
+            <section class="features fade-in">
+                <div class="feature-item">
+                    <h3>Feature 1</h3>
+                    <p>Learn new skills and grow your expertise with our professional trainers.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 2</h3>
+                    <p>Receive personalized strategies for success tailored to your needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 3</h3>
+                    <p>Join a community of like-minded individuals and support each other.</p>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <div class="cta fade-in">
+                <h2>Ready to Get Started?</h2>
+                <p>Sign up today and start your journey with us.</p>
+                <a href="#" class="cta-button">Join Now</a>
+            </div>
+
+            <!-- Modal (hidden by default) -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">×</span>
+                    <h2>Sign Up Now</h2>
+                    <p>Enter your details below to join our community and start your journey.</p>
+                    <form>
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Landing Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Modal display logic
+        const ctaButton = document.querySelector('.cta-button');
+        const modal = document.getElementById('modal');
+
+        ctaButton.addEventListener('click', function() {
+            modal.style.display = 'block';
+        });
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
